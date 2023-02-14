@@ -10,23 +10,23 @@ function Register() {
     <div className="h-screen flex flex-col items-center justify-center text-center">
       <Image width={50} height={50} src={ChatGPTLogo} alt="logo" />
 
-      <h2>Авторизация</h2>
+      <h2>Регистрация</h2>
 
-<form action="#main">
+      <form>
     <p>
-      <input type="email" id="email" name="email" placeholder="Email"></input>
-      <label for="email" id="emailLabel"></label>
+      <input className="login-input" type="email" id="email" name="email" placeholder="Email"></input>
+      <label className="login-label" for="email" id="emailLabel"></label>
     </p>
     <p>
-      <input type="password" id="password" name="password" placeholder="Пароль"></input>
-      <label for="password" id="passwordLabel"></label>
+      <input className="login-input " type="password" id="password" name="password" placeholder="Пароль"></input>
+      <label className="login-label" for="password" id="passwordLabel"></label>
     </p>
     <p>
-      <input type="submit" value="Продолжить" id="submitBtn" disabled></input>
+      <input className='login-button' type="submit" value="Продолжить" id="submitBtn" disabled></input>
     </p>
   </form>
 
-<h5>Нет аккаунта? <Link href="/login">Зарегистрируйтесь</Link></h5>
+<h5>Нет аккаунта? <button onClick={() => history.push("/register")}>Зарегистрируйтесь</button></h5>
 
 
       <button
