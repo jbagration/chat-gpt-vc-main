@@ -33,7 +33,7 @@ function SideBar() {
           {/* Map through ChatRows */}
           <div className="flex flex-col space-y-2 my-2">
             {loading && (
-              <div className="animate-pulse text-center text-white">
+              <div className="animate-pulse text-center text-black">
                 Загрузка...
               </div>
             )}

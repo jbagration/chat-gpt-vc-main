@@ -4,7 +4,7 @@ import React from 'react'
 
 function ChatPage({params: {id}}) {
   return (
-    <div className='flex flex-col h-screen overflow-hidden'>
+    <div className='flex flex-col h-96 overflow-hidden'>
         {/* Chat */}
         <Chat chatId={id} />
         {/* ChatInput */}

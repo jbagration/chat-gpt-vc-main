@@ -73,14 +73,14 @@ function ChatInput({ chatId }) {
   };
 
   return (
-    <div className="bg-[#fff] text-black-400 rounded-lg text-sm">
+    <div className="bg-[#E7E7E7] text-black-400 rounded-lg text-sm">
       <form className="p-5 space-x-5 flex" onSubmit={sendMessage}>
         <input
           type="text"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           placeholder="Введите текст..."
-          className="bg-transparent focus:outline-none flex-1 disabled:cursor-not-allowed disabled:text-black"
+          className="bg-[#FFF] focus:outline-none text-black flex-1 disabled:cursor-not-allowed disabled:text-black"
           disabled={!session}
         />
         <button
